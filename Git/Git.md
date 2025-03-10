@@ -161,6 +161,52 @@ $ git reset HEAD CONTRIBUTING.md
 $ git checkout -- CONTRIBUTING.md
 ```
 
+### 2.5 远程仓库的使用
+
+#### 查看远程仓库
+
+```console
+$ git remote
+```
+
+或
+
+```console
+$ git remote -v
+```
+
+#### 添加远程仓库
+
+使用 `git remote add <shortname> <url>`命令，例如：
+
+```console
+$ git remote add pb https://github.com/paulboone/ticgit
+```
+
+现在你可以在命令行中使用字符串 `pb` 来代替整个 URL，比如可以`git fetch pb`。
+
+#### 查看某个仓库
+
+使用 `git remote show <remote>` 命令：
+
+```console
+$ git remote show origin
+```
+
+#### 远程仓库的重命名与移除
+
+运行 `git remote rename` 来修改一个远程仓库的简写名，将 `pb` 重命名为 `paul`：
+
+```console
+$ git remote rename pb paul
+```
+
+移除一个远程仓库，也就是本地仓库不再链接远程仓库，使用 `git remote remove` 或 `git remote rm` ：
+
+```console
+$ git remote remove paul
+```
+
 ## 3. Git 分支
 
 ### 3.1 分支简介
