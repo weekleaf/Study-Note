@@ -90,9 +90,9 @@ else
 
 VS生成文件的默认配置非常亏贼，很没有逻辑，建议修改为：
 
-输出文件目录：$(SolutionDir)bin\\$(Platform)\\$(Configuration)\
+输出文件目录：\$(SolutionDir)bin\\\$(Platform)\\$(Configuration)\
 
-中间文件目录：$(SolutionDir)bin\\intermediates\\$(Platform)\\$(Configuration)\
+中间文件目录：\$(SolutionDir)bin\\intermediates\\\$(Platform)\\$(Configuration)\
 
 ## 16. 指针
 
